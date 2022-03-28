@@ -1,6 +1,6 @@
 # Introduction
 This is a stm32 build system based on CMake. 
-The goal of this template is to let user configure the UserConfig.cmake file only to compile a project that suppports FreeRTOS and HAL libraries. For relatively simple projects, this should be enough.
+The goal of this template is to let user only configure the UserConfig.cmake file to compile a project that supports FreeRTOS and HAL libraries. For relatively simple projects, this should be enough.
 
 # Usage
 1. Configure the UserConfig.cmake file
