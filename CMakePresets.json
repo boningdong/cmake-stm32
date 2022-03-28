@@ -1,0 +1,30 @@
+{
+    "version": 3,
+    "cmakeMinimumRequired": {
+        "major": 3,
+        "minor": 13,
+        "patch": 0
+    },
+    "configurePresets": [
+        {
+            "name": "stm32",
+            "displayName": "STM32",
+            "description": "STM32 build system using Makefile",
+            "generator": "Unix Makefiles",
+            "binaryDir": "${sourceDir}/build/stm32",
+            "toolchainFile": "${sourceDir}/CMake/arm-gcc.cmake"
+        }
+    ],
+    "buildPresets": [
+        {
+            "name": "stm32",
+            "configurePreset": "stm32"
+        }
+    ],
+    "testPresets": [
+        {
+            "name": "stm32",
+            "configurePreset": "stm32"
+        }
+    ]
+}
