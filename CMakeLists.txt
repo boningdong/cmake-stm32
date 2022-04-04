@@ -55,11 +55,7 @@ string(APPEND _OPTS
     "-Wextra;"
     "-Wpedantic;"
     "-Wno-unused-parameter;"
-    "$<$<COMPILE_LANGUAGE:CXX>:
-        -Wno-volatile;
-        -Wold-style-cast;
-        -Wuseless-cast;
-        -Wsuggest-override>;"
+    "$<$<COMPILE_LANGUAGE:CXX>:-Wno-volatile;-Wold-style-cast;-Wuseless-cast;-Wsuggest-override>;"
     "$<$<CONFIG:Debug>:-Og;-g3;-ggdb;>"
     "$<$<CONFIG:Release>:-Og;-g0;>"
 )
